@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Disney & Pixar</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/icone.jpg" />
+  </head>
+  <body>
+    <h1 id="title">Quiz Disney & Pixar</h1>
+
+    <!-- quiz-container -->
+    <div id="quiz-container">
+      <!-- pergunta container -->
+      <div class="flex-container perguntas">
+        <h2 id="pergunta"></h2>
+        <ol type="A" class="alternativas">
+          <li class="opcao">
+            <span id="opcao0" onclick="calcPontuacao(this)"></span>
+          </li>
+          <li class="opcao">
+            <span id="opcao1" onclick="calcPontuacao(this)"></span>
+          </li>
+          <li class="opcao">
+            <span id="opcao2" onclick="calcPontuacao(this)"></span>
+          </li>
+          <li class="opcao">
+            <span id="opcao3" onclick="calcPontuacao(this)"></span>
+          </li>
+          <li class="opcao">
+            <span id="opcao4" onclick="calcPontuacao(this)"></span>
+          </li>
+        </ol>
+        <h4 id="stat"></h4>
+      </div>
+
+      <!--OBS: talvez seja melhor tirar p não ter a opção de passar p próxima pergunta-->
+      <div class="buttons">
+        <button type="button" class="next">Pular questão</button>
+      </div>
+    </div>
+
+    <div id="scoreboard">
+      <img src="images/icone.jpg" alt="" />
+      <h2 id="score-title">Acertos</h2>
+      <h2 id="score"></h2>
+      <button type="button" id="score-btn" onclick="reiniciar()">
+        Reiniciar
+      </button>
+      <button type="button" id="check-resposta" onclick="checkresposta()">
+        Check respostas
+      </button>
+    </div>
+
+    <div id="respostaQuiz">
+      <h2>Respostas :</h2>
+      <ol type="1" id="respostas"></ol>
+      <button type="button" id="score-btn" onclick="reiniciar()">
+        Reiniciar
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
