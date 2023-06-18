@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=League+Spartan:wght@400;600;800;900&family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s all;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(images/backgroundPixar.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/*ACHO q ñ serve p nada*/
+/*.img{
+    position: fixed;
+}*/
+
+#title{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 1px #576ed8;
+    background: rgba(117, 196, 248, 0.45);
+    font-family: 'Poppins', sans-serif;
+}
+.perguntas{
+    position: relative;
+    margin: 3rem auto;
+    width: 50%;
+    padding: 1.5rem;
+    background: rgba(0,255,221,0.45);
+    cursor: default;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 3px rgba(0, 255, 221, 0.274);
+}
+#pergunta{
+    margin-bottom: 1rem;
+}
+
+.alternativas{
+    display: grid;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.opcao{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    width: 400px;
+    text-align: center;
+    background: lightblue;
+    border-radius: 10px;
+}
+
+.alternativas span:hover{
+    color: #fff;
+}
+
+/*ACHO q ñ serve p nada*/
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: rgb(1,73,73);
+}
+
+span{
+    display: block;
+    padding: 7px;
+    border-radius: 10px;
+}
+#resposta{
+    margin-top: 2.5rem;
+}
+#stat{
+    margin-top: 1.5rem;
+    color: #FFFFFF;
+}
+.buttons{
+    text-align: center;
+}
+button{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #576ed8;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: #ffffff;
+    background:  rgba(117, 196, 248, 0.45);
+}
+button:hover{
+    letter-spacing: 1.5px;
+}
+
+#scoreboard img{
+    width: 150px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+#scoreboard,#respostaQuiz{
+    width: 20rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+}
+#score-title{
+    margin: 1rem 0;
+}
+#score-btn,#check-resposta{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 2.5rem;
+}
+#respostaQuiz li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#respostas{
+    margin-top: 1rem;
+}
